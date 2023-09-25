@@ -1,25 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using create-react-app">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/logo192.png">
-    <link rel="manifest" href="/manifest.json">
-    <title>React App</title>
-    
-    <!-- Add mobile-friendly CSS libraries or styles here if needed -->
-    
-    <link href="/static/css/main.c7fd21f7.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="scripts.js" defer></script>
+    <title>Your Portfolio</title>
 </head>
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="containe">
 
-    <!-- Add JavaScript and CSS for mobile-specific features here -->
-    
-    <script defer="defer" src="/static/js/main.bb12f7a0.js"></script>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            
+            <div class="mobile-nav">
+                <ul class="mobile-menu" id="mobile-menu" style="display: none;">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+            </div>
+            
+            
+            <div class="logo">
+                <h1><span>Moatez </span> Ghabri</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+ <!-- ... previous code ... -->
+<!-- Desktop version of the About section -->
+<section class="about" id="desktop-about">
+    <div class="header">
+        <div class="left">
+            <div class="text-info">
+                <h1 class="name" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Moatez Ghabri</h1>
+                <p style="font-size: 80px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> <span style="color: aqua; " > web </span>developer</p>
+                <p style="font-size: 60px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">  Full stack<span style="color: aqua; " > JS</span></p>
+                <p style="font-size: 30px;"><span class="contact-info">moatazghabri@gmail.com</span></p>
+                <p style="font-size: 30px;"><span class="contact-info">+216 52 030 15</span></p>
+                <a href="cv.pdf" download class="download-button">Download My CV</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="photo.jpg" alt="Photo" class="circular-image" id="profile-image">
+        </div>
+    </div>
+</section>
+
+<!-- Mobile version of the About section -->
+<section class="about" id="mobile-about">
+    <div class="container">
+        <div class="about-content">
+            <img src="photo.jpg" alt="Photo" class="circular-image contour" id="profile">
+            <div class="text-content">
+                <h1 class="name" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Moatez Ghabri</h1>
+                <p style="font-size: 80px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> <span style="color: aqua; " > web </span>developer</p>
+                <p style="font-size: 60px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">  Full stack<span style="color: aqua; " > JS</span></p>
+                <p style="font-size: 30px;"><span class="contact-info">moatazghabri@gmail.com</span></p>
+                <p style="font-size: 30px;"><span class="contact-info">+216 52 030 15</span></p>
+                <a href="cv.pdf" download class="download-button">Download My CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ... rest of the code ... -->
+
+
+
+
+<section id="projects">
+    <div class="container">
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 60px;">My <span style="color: aqua;">Pro</span>jects</h2>
+        <div class="project-scroll">
+            <div class="project-card" >
+                <img src="port.png" alt="Project 1">
+                <h3>E-learning website</h3>
+                <p>website contains a course <br>of programming Languages <br>  building by <span style="color:rgb(228, 77, 38) ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">HTML</span>, <span style="color: rgb(37, 77, 228); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CSS</span>, <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Java</span><span style="color:rgb(230, 199, 45) ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Script</span> and <span style="color: rgb(132, 136, 186); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">PHP</span></p>
+            </div>
+            <div class="project-card">
+                <img src="port.png" alt="Project 2">
+                <h3>E-commerce website</h3>
+                <p>travel agency website<br> building by <span style="color:rgb(228, 77, 38) ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">HTML</span>, <span style="color: rgb(37, 77, 228); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CSS</span>, <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Java</span><span style="color:rgb(230, 199, 45) ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Script</span> and <span style="color: rgb(132, 136, 186); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">PHP</span></p>
+            </div>
+            <div class="project-card">
+                <img src="port.png" alt="Project 2">
+                <h3>Portfolio website</h3>
+                <p>website describe a socity <br> building by <span style="color: rgb(26, 220, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;" >react</span></p>
+            </div>
+            <div class="project-card">
+                <img src="port.png" alt="Project 2" >
+                <h3>E-commerce website</h3>
+                <p>online shopping website<br> building by <span style="color: rgb(26, 220, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ">react</span>,<span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> node.</span><span style="color: rgb(115, 237, 115);">js</span> and <span style="color: rgb(105, 176, 93);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Mongo</span><span style="color: rgb(166, 145, 122);">DB</span></p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills">
+    <div class="container">
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 60px;">Skills</h2>
+        <div class="skills-card">
+            
+            <div class="skill">
+
+                <img src="html.png" alt="HTML">
+                <h3>HTML5</h3>
+                <p>Proficient in creating well-structured and semantic HTML.</p>
+            </div>
+            <div class="skill">
+                <img src="css.png" alt="CSS">
+                <h3>CSS3</h3>
+                <p>Skilled in designing responsive and visually appealing websites.</p>
+            </div>
+            <div class="skill">
+                <img src="js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Experienced in building dynamic and interactive web applications.</p>
+            </div>
+            <div class="skill">
+                <img src="php.png" alt="PHP">
+                <h3>PHP</h3>
+                <p>Proficient in server-side scripting using PHP for web development.</p>
+            </div>
+            <div class="skill">
+                <img src="node.png" alt="JavaScript">
+                <h3>Node.js</h3>
+                <p>Skilled in server-side development using Node.js and Express.</p>
+            </div>
+            <div class="skill">
+                <img src="react.png" alt="JavaScript">
+                <h3>React</h3>
+                <p>Proficient in building modern and efficient user interfaces using React.</p>
+            </div>
+            <div class="skill">
+                <img src="mongo.png" alt="JavaScript">
+                <h3>MongoDB</h3>
+                <p>Experience in working with MongoDB for database management.</p>
+            </div>
+            <!-- Add more skill cards as needed -->
+            <!-- French Language Card -->
+           
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 60px;">Get in <span style="color: aqua;">Touch</span> </h2>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=100005326681539" target="_blank" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/moataz-ghabri-153a23234/" target="_blank" class="social-icon"><img src="linkedin.png" alt="Twitter"></a>
+        </div>
+        <div class="social-media-icons">
+            <a href="mailto:moatazghabri@gmail.com" class="social-icon">
+                <img src="gmail.png" alt="Email">
+            </a>
+        </div>
+        
+        <div class="social-media-icons">
+            <a href="https://github.com/MoatazGhabri" target="_blank" class="social-icon"><img src="github.png" alt="LinkedIn"></a>
+        </div>
+        <!-- Add more social media icons as needed -->
+        <form>
+            <div class="name-container">
+                <input placeholder="First Name" type="text" id="name" name="name" required>
+                
+            <input placeholder="last Name" type="text" id="lastname" name="lastname" required>
+        </div>
+            <input placeholder="Email" type="email" id="email" name="email" required>
+            <textarea placeholder="Feedback" id="message" name="message" rows="4" required></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container" style="font-size: large;font-family: 'Graffiti font', sans-serif;">
+        &copy; 2023 Moatez <span style="color: rgba(16, 211, 211, 0.489);">Ghabri</span> 
+    </div>
+</footer>
+</div>
+
 </body>
 </html>
