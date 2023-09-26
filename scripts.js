@@ -98,11 +98,22 @@ menuIcon.addEventListener('click', () => {
 });
 window.addEventListener('load', () => {
     // Hide the loading spinner when the page finishes loading
-    const loadingSpinner = document.querySelector('.loading-spinner');
-    loadingSpinner.style.opacity = '100'; // Fade out
+    const loadinglogo = document.querySelector('.loading-logo');
+    
+    // Increase the transition delay to 2000 milliseconds (2 seconds)
+    loadinglogo.style.transition = 'opacity 20s';
+
+    // Fade out
+    loadinglogo.style.opacity = '0';
+
     setTimeout(() => {
-        loadingSpinner.style.display = 'none'; // Hide
-    }, 3000); // Delay for the fade-out transition (adjust as needed)
+        loadinglogo.style.display = 'none'; // Hide
+    }, 20000); // Delay for the fade-out transition (adjust as needed)
+});
+
+// Show the jumping logo when the page is refreshing
+window.addEventListener('beforeunload', () => {
+    document.querySelector('.loading-logo').style.display = 'flex';
 });
 
 

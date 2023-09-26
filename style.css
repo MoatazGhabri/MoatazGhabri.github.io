@@ -692,30 +692,31 @@ footer {
 }
 
 /* CSS for the loading spinner */
-.loading-spinner {
+.loading-logo {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 24, 24, 0.8); /* Semi-transparent white background */
+    background-color: rgb(0, 0, 0); /* Semi-transparent black background */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Ensure it's above other elements */
-    transition: opacity 0.3s ease; /* Fade-in transition effect */
-    opacity: 1; /* Initially visible */
+    z-index: 1000; /* Ensure it's above other content */
 }
 
-.spinner {
-    border-top: 10px solid #3498db; /* Blue border for the spinning part */
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    animation: spin 2s linear infinite; /* Spinning animation */
+.loading-logo img {
+    width: 100px;
+    max-width: 50%; /* Adjust the size of your logo */
+    animation: jump 2s ease infinite; /* Jumping animation */
+    transform-origin: bottom;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    33%, 66% {
+        transform: translateY(-30px); /* Adjust the jump height */
+    }
 }
