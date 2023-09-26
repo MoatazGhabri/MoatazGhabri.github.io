@@ -108,7 +108,7 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
         loadinglogo.style.display = 'none'; // Hide
-    }, 20000); // Delay for the fade-out transition (adjust as needed)
+    }, 2000); // Delay for the fade-out transition (adjust as needed)
 });
 
 // Show the jumping logo when the page is refreshing
