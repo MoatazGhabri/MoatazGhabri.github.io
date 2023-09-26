@@ -176,6 +176,7 @@ section {
         padding: 8px 16px; /* Reduce padding for smaller screens */
         font-size: 14px; /* Adjust font size for mobile */
     }
+
 }
 /* Add styles for the project section */
 #projects {
@@ -189,7 +190,17 @@ section {
     white-space: nowrap; /* Prevent wrapping to the next line */
     transform: translateX(100%); /* Initially translate to the right edge */
 }
-
+#projects-mobile{
+    display: none;
+}
+@media(max-width: 768px) {
+    #projects{
+    display: none;
+} 
+    #projects-mobile{
+        display: block;
+    }
+}
 .project-card {
     min-width: 300px;
     border: 10px solid #1783e82f;
@@ -247,6 +258,31 @@ section {
         font-size: 24px;
     }
 }
+/* Add styles for the project section on mobile screens */
+@media (max-width: 768px) {
+    #projects {
+        text-align: center;
+        overflow: hidden;
+        white-space: normal; /* Prevent horizontal scrolling */
+    }
+
+    /* Adjust project card styles for responsiveness */
+    .project-card {
+        min-width: auto; /* Remove the minimum width */
+        width: 90%; /* Make them wider on smaller screens */
+        margin: 20px auto; /* Center the cards and add spacing */
+        display: block; /* Stack project cards vertically */
+    }
+
+    /* Optional: Adjust other project card styles as needed */
+    .project-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* ... Rest of your existing CSS ... */
 
 /* Style for project and skills cards */
 /* Add styles for the skills section */
